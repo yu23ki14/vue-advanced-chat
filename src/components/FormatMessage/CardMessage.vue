@@ -38,13 +38,13 @@ export default {
 		toggleBookmark() {
 			if (this.bookmarked) {
 				this.bookmarked = false
+				window.localStorage.removeItem(this.href)
+			} else {
+				this.bookmarked = true
 				window.localStorage.setItem(
 					this.href,
 					JSON.stringify({ href: this.href, title: this.title, img: this.img })
 				)
-			} else {
-				this.bookmarked = true
-				window.localStorage.removeItem(this.href)
 			}
 		}
 	}
