@@ -23,11 +23,7 @@
 		</div>
 
 		<div class="vac-cardmessage-box" v-else-if="isCard">
-			<card-message
-				:title="message.link.title"
-				:href="message.link.href"
-				:img="message.link.img"
-			/>
+			<card-message :content="message.content" />
 		</div>
 
 		<div
