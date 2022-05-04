@@ -8,7 +8,7 @@
 			{{ textMessages.NEW_MESSAGES }}
 		</div>
 
-		<div v-if="message.system" class="vac-card-info vac-card-system">
+		<div v-if="message.system" class="vac-card-info vac-card-system test">
 			<format-message
 				:content="message.content"
 				:users="roomUsers"
@@ -191,9 +191,7 @@
 						}"
 						@click="$emit('open-failed-message', { message })"
 					>
-						<div class="vac-failure-text">
-							!
-						</div>
+						<div class="vac-failure-text">!</div>
 					</div>
 				</slot>
 				<div
