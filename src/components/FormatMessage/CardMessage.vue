@@ -1,10 +1,11 @@
 <template>
 	<a :href="href" class="vac-link-card-wrapper" target="_blank">
-		<img :src="img" :alt="`${title}の画像`" />
+		<img :src="img" :alt="`${title}の画像`" class="vac-link-ogpimg" />
 		<div class="vac-link-card-desc">
 			<h3>{{ title }}</h3>
 			<p>{{ href }}</p>
 		</div>
+		<img src="../../assets/bookmark.svg" alt="ブックマーク" width="30px" />
 	</a>
 </template>
 
