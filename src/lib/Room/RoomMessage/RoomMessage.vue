@@ -22,8 +22,8 @@
 			</format-message>
 		</div>
 
-		<div class="vac-linkcard-box" v-else-if="isLink">
-			<link-card
+		<div class="vac-cardmessage-box" v-else-if="isCard">
+			<card-message
 				:title="message.link.title"
 				:href="message.link.href"
 				:img="message.link.img"
@@ -219,7 +219,7 @@
 <script>
 import SvgIcon from '../../../components/SvgIcon/SvgIcon'
 import FormatMessage from '../../../components/FormatMessage/FormatMessage'
-import LinkCard from '../../../components/FormatMessage/LinkCard'
+import CardMessage from '../../../components/FormatMessage/CardMessage'
 
 import MessageReply from './MessageReply/MessageReply'
 import MessageFiles from './MessageFiles/MessageFiles'
@@ -235,12 +235,12 @@ export default {
 	components: {
 		SvgIcon,
 		FormatMessage,
+		CardMessage,
 		AudioPlayer,
 		MessageReply,
 		MessageFiles,
 		MessageActions,
-		MessageReactions,
-		LinkCard
+		MessageReactions
 	},
 
 	props: {
@@ -317,12 +317,8 @@ export default {
 		isAudio() {
 			return this.message.files?.some(file => isAudioFile(file))
 		},
-		isLink() {
-			if (this.message.link?.href.length > 0) {
-				return true
-			} else {
-				return false
-			}
+		isCard() {
+			return this.message.card
 		},
 		isCheckmarkVisible() {
 			return (

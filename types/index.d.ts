@@ -65,7 +65,7 @@ export interface MessageReactions {
 export interface Message {
 	_id: StringNumber
 	indexId?: StringNumber
-	content: string
+	content: string | Vue.VueElement
 	senderId: StringNumber
 	username?: string
 	avatar?: string
@@ -82,7 +82,7 @@ export interface Message {
 	files?: MessageFile[]
 	reactions?: MessageReactions
 	replyMessage?: Message
-	link?: MessageLink
+	card?: boolean
 }
 
 export type Messages = Message[]

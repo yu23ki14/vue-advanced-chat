@@ -1,6 +1,8 @@
 .vac-link-card-wrapper {
-	border: 1px solid grey;
+	display: flex;
 	border-radius: 5px;
 	width: 100%;
 	padding: 10px;
+	box-shadow: 0 2px 2px 1px #b5b5b5;
+	background: white;
 }
