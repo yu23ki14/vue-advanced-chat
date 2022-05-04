@@ -191,7 +191,9 @@
 						}"
 						@click="$emit('open-failed-message', { message })"
 					>
-						<div class="vac-failure-text">!</div>
+						<div class="vac-failure-text">
+!
+</div>
 					</div>
 				</slot>
 				<div
