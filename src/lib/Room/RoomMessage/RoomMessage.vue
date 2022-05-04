@@ -103,8 +103,7 @@
 							:title="message.link.title"
 							:href="message.link.href"
 							:img="message.link.img"
-						>
-						</link-card>
+						/>
 
 						<message-files
 							v-else-if="!isAudio || message.files.length > 1"
@@ -219,6 +218,7 @@
 <script>
 import SvgIcon from '../../../components/SvgIcon/SvgIcon'
 import FormatMessage from '../../../components/FormatMessage/FormatMessage'
+import LinkCard from '../../../components/FormatMessage/LinkCard'
 
 import MessageReply from './MessageReply/MessageReply'
 import MessageFiles from './MessageFiles/MessageFiles'
@@ -238,7 +238,8 @@ export default {
 		MessageReply,
 		MessageFiles,
 		MessageActions,
-		MessageReactions
+		MessageReactions,
+		LinkCard
 	},
 
 	props: {
