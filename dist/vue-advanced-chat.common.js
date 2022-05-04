@@ -35041,37 +35041,37 @@ function RoomsSearchvue_type_template_id_1fc42a9b_render(_ctx, _cache, $props, $
 }
 // CONCATENATED MODULE: ./src/lib/RoomsList/RoomsSearch/RoomsSearch.vue?vue&type=template&id=1fc42a9b
 
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
-var es_array_concat = __webpack_require__("99af");
-
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.function.name.js
 var es_function_name = __webpack_require__("b0c0");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/components/SvgIcon/SvgIcon.vue?vue&type=template&id=e4768910
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
+var es_array_concat = __webpack_require__("99af");
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/components/SvgIcon/SvgIcon.vue?vue&type=template&id=a2de5b02
 
 
 
-var SvgIconvue_type_template_id_e4768910_hoisted_1 = ["viewBox"];
-var SvgIconvue_type_template_id_e4768910_hoisted_2 = ["id", "d"];
-var SvgIconvue_type_template_id_e4768910_hoisted_3 = ["id", "d"];
-function SvgIconvue_type_template_id_e4768910_render(_ctx, _cache, $props, $setup, $data, $options) {
+var SvgIconvue_type_template_id_a2de5b02_hoisted_1 = ["width", "height", "viewBox"];
+var SvgIconvue_type_template_id_a2de5b02_hoisted_2 = ["id", "d"];
+var SvgIconvue_type_template_id_a2de5b02_hoisted_3 = ["id", "d"];
+function SvgIconvue_type_template_id_a2de5b02_render(_ctx, _cache, $props, $setup, $data, $options) {
   return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     "xmlns:xlink": "http://www.w3.org/1999/xlink",
     version: "1.1",
-    width: "24",
-    height: "24",
+    width: $data.svgItem[$props.name].width || '24',
+    height: $data.svgItem[$props.name].height || '24',
     viewBox: "0 0 ".concat($options.size, " ").concat($options.size)
   }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("path", {
     id: $options.svgId,
     d: $data.svgItem[$props.name].path
-  }, null, 8, SvgIconvue_type_template_id_e4768910_hoisted_2), $data.svgItem[$props.name].path2 ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("path", {
+  }, null, 8, SvgIconvue_type_template_id_a2de5b02_hoisted_2), $data.svgItem[$props.name].path2 ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("path", {
     key: 0,
     id: $options.svgId,
     d: $data.svgItem[$props.name].path2
-  }, null, 8, SvgIconvue_type_template_id_e4768910_hoisted_3)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)], 8, SvgIconvue_type_template_id_e4768910_hoisted_1);
+  }, null, 8, SvgIconvue_type_template_id_a2de5b02_hoisted_3)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)], 8, SvgIconvue_type_template_id_a2de5b02_hoisted_1);
 }
-// CONCATENATED MODULE: ./src/components/SvgIcon/SvgIcon.vue?vue&type=template&id=e4768910
+// CONCATENATED MODULE: ./src/components/SvgIcon/SvgIcon.vue?vue&type=template&id=a2de5b02
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/components/SvgIcon/SvgIcon.vue?vue&type=script&lang=js
 
@@ -35156,7 +35156,9 @@ function SvgIconvue_type_template_id_e4768910_render(_ctx, _cache, $props, $setu
           path2: 'M42.877,40.976c0,3.662-2.969,6.631-6.631,6.631l0,0c-3.662,0-6.631-2.969-6.631-6.631V6.631C29.616,2.969,32.585,0,36.246,0l0,0c3.662,0,6.631,2.969,6.631,6.631V40.976z'
         },
         bookmark: {
-          size: 'large',
+          size: '100',
+          width: '30',
+          height: '30',
           path: 'M 15.181 89.999 c -0.763 0 -1.529 -0.182 -2.234 -0.55 c -1.597 -0.835 -2.588 -2.472 -2.588 -4.274 V 7.504 C 10.358 3.366 13.725 0 17.862 0 h 54.276 c 4.137 0 7.503 3.366 7.503 7.504 v 77.672 c 0 1.801 -0.991 3.439 -2.588 4.273 c -1.598 0.836 -3.506 0.714 -4.985 -0.313 v -0.001 L 47.684 72.177 c -1.606 -1.115 -3.763 -1.115 -5.367 0 L 17.932 89.134 C 17.107 89.708 16.146 89.999 15.181 89.999 z M 74.352 85.851 c 0.354 0.244 0.684 0.14 0.85 0.053 c 0.164 -0.086 0.44 -0.295 0.44 -0.728 V 7.504 C 75.642 5.572 74.07 4 72.139 4 H 17.862 c -1.932 0 -3.504 1.572 -3.504 3.504 v 77.672 c 0 0.433 0.276 0.642 0.441 0.728 c 0.166 0.088 0.494 0.193 0.849 -0.053 l 24.384 -16.957 c 2.972 -2.067 6.966 -2.067 9.935 0 L 74.352 85.851 z',
           path2: 'M 34.439 54.502 c -0.762 0 -1.519 -0.238 -2.166 -0.708 c -1.145 -0.832 -1.708 -2.215 -1.469 -3.61 l 1.689 -9.843 l -7.152 -6.971 c -1.013 -0.987 -1.372 -2.437 -0.935 -3.783 c 0.438 -1.347 1.579 -2.309 2.98 -2.513 l 9.883 -1.436 l 4.42 -8.956 c 0.627 -1.269 1.895 -2.057 3.31 -2.057 s 2.684 0.788 3.31 2.057 c 0 0 0 0 0.001 0 l 4.419 8.956 l 9.883 1.437 c 1.401 0.204 2.543 1.167 2.981 2.513 c 0.438 1.346 0.079 2.795 -0.935 3.783 l -7.151 6.971 l 1.688 9.843 c 0.239 1.395 -0.323 2.777 -1.469 3.609 c -1.145 0.832 -2.636 0.938 -3.887 0.281 L 45 49.427 l -8.84 4.648 C 35.615 54.361 35.026 54.502 34.439 54.502 z M 28.582 30.942 l 6.82 6.648 c 0.871 0.849 1.267 2.07 1.062 3.268 l -1.61 9.385 l 8.429 -4.432 c 1.076 -0.564 2.36 -0.564 3.435 0 l 8.43 4.432 l -1.609 -9.386 c -0.206 -1.196 0.19 -2.419 1.064 -3.268 l 6.818 -6.646 l -9.425 -1.37 c -1.201 -0.174 -2.239 -0.929 -2.778 -2.018 L 45 19.013 l -4.215 8.54 c -0.537 1.089 -1.576 1.844 -2.779 2.019 L 28.582 30.942 z M 52.802 25.782 h 0.01 H 52.802 z M 44.723 18.452 c 0 0 0 0.001 0.001 0.001 L 44.723 18.452 z'
         }
@@ -35170,7 +35172,7 @@ function SvgIconvue_type_template_id_e4768910_render(_ctx, _cache, $props, $setu
     },
     size: function size() {
       var item = this.svgItem[this.name];
-      if (item.size === 'large') return 512;else if (item.size === 'medium') return 48;else return 24;
+      if (item.size === 'large') return 512;else if (item.size === '100') return 100;else if (item.size === 'medium') return 48;else return 24;
     }
   }
 });
@@ -35182,7 +35184,7 @@ function SvgIconvue_type_template_id_e4768910_render(_ctx, _cache, $props, $setu
 
 
 
-const SvgIcon_exports_ = /*#__PURE__*/exportHelper_default()(SvgIconvue_type_script_lang_js, [['render',SvgIconvue_type_template_id_e4768910_render]])
+const SvgIcon_exports_ = /*#__PURE__*/exportHelper_default()(SvgIconvue_type_script_lang_js, [['render',SvgIconvue_type_template_id_a2de5b02_render]])
 
 /* harmony default export */ var SvgIcon = (SvgIcon_exports_);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/lib/RoomsList/RoomsSearch/RoomsSearch.vue?vue&type=script&lang=js
@@ -39889,14 +39891,14 @@ function RoomMessagevue_type_template_id_67c583a2_render(_ctx, _cache, $props, $
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.reduce.js
 var es_array_reduce = __webpack_require__("13d5");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/components/FormatMessage/CardMessage.vue?vue&type=template&id=253636b2
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/components/FormatMessage/CardMessage.vue?vue&type=template&id=d153353a
 
-var CardMessagevue_type_template_id_253636b2_hoisted_1 = ["href"];
-var CardMessagevue_type_template_id_253636b2_hoisted_2 = ["src", "alt"];
-var CardMessagevue_type_template_id_253636b2_hoisted_3 = {
+var CardMessagevue_type_template_id_d153353a_hoisted_1 = ["href"];
+var CardMessagevue_type_template_id_d153353a_hoisted_2 = ["src", "alt"];
+var CardMessagevue_type_template_id_d153353a_hoisted_3 = {
   "class": "vac-link-card-desc"
 };
-function CardMessagevue_type_template_id_253636b2_render(_ctx, _cache, $props, $setup, $data, $options) {
+function CardMessagevue_type_template_id_d153353a_render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_svg_icon = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("svg-icon");
 
   return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("a", {
@@ -39907,13 +39909,16 @@ function CardMessagevue_type_template_id_253636b2_render(_ctx, _cache, $props, $
     src: $props.img,
     alt: "".concat($props.title, "\u306E\u753B\u50CF"),
     "class": "vac-link-ogpimg"
-  }, null, 8, CardMessagevue_type_template_id_253636b2_hoisted_2), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", CardMessagevue_type_template_id_253636b2_hoisted_3, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("h3", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.title), 1), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("p", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.href), 1)]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_svg_icon, {
-    name: "bookmark"
-  })], 8, CardMessagevue_type_template_id_253636b2_hoisted_1);
+  }, null, 8, CardMessagevue_type_template_id_d153353a_hoisted_2), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", CardMessagevue_type_template_id_d153353a_hoisted_3, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("h3", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.title), 1), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("p", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.href), 1)]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_svg_icon, {
+    name: "bookmark",
+    "class": Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])("vac-link-card-bookmark ".concat($data.bookmarked ? 'isBookmarked' : '')),
+    onClick: $options.toggleBookmark
+  }, null, 8, ["class", "onClick"])], 8, CardMessagevue_type_template_id_d153353a_hoisted_1);
 }
-// CONCATENATED MODULE: ./src/components/FormatMessage/CardMessage.vue?vue&type=template&id=253636b2
+// CONCATENATED MODULE: ./src/components/FormatMessage/CardMessage.vue?vue&type=template&id=d153353a
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/components/FormatMessage/CardMessage.vue?vue&type=script&lang=js
+
 
 /* harmony default export */ var CardMessagevue_type_script_lang_js = ({
   name: 'CardMessage',
@@ -39933,6 +39938,31 @@ function CardMessagevue_type_template_id_253636b2_render(_ctx, _cache, $props, $
       type: String,
       "default": ''
     }
+  },
+  data: function data() {
+    return {
+      bookmarked: false
+    };
+  },
+  mounted: function mounted() {
+    if (window.localStorage.getItem(this.href)) {
+      this.bookmarked = true;
+    }
+  },
+  methods: {
+    toggleBookmark: function toggleBookmark() {
+      if (this.bookmarked) {
+        this.bookmarked = false;
+        window.localStorage.setItem(this.href, JSON.stringify({
+          href: this.href,
+          title: this.title,
+          img: this.img
+        }));
+      } else {
+        this.bookmarked = true;
+        window.localStorage.removeItem(this.href);
+      }
+    }
   }
 });
 // CONCATENATED MODULE: ./src/components/FormatMessage/CardMessage.vue?vue&type=script&lang=js
@@ -39943,7 +39973,7 @@ function CardMessagevue_type_template_id_253636b2_render(_ctx, _cache, $props, $
 
 
 
-const CardMessage_exports_ = /*#__PURE__*/exportHelper_default()(CardMessagevue_type_script_lang_js, [['render',CardMessagevue_type_template_id_253636b2_render]])
+const CardMessage_exports_ = /*#__PURE__*/exportHelper_default()(CardMessagevue_type_script_lang_js, [['render',CardMessagevue_type_template_id_d153353a_render]])
 
 /* harmony default export */ var CardMessage = (CardMessage_exports_);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/lib/Room/RoomMessage/MessageReply/MessageReply.vue?vue&type=template&id=d0ae9658
