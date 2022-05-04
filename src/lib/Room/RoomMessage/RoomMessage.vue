@@ -86,7 +86,7 @@
 						</div>
 
 						<format-message
-							v-else-if="!message.files || !message.files.length"
+							v-else-if="!message.files || !message.files.length || !isLink"
 							:content="message.content"
 							:users="roomUsers"
 							:text-formatting="textFormatting"
