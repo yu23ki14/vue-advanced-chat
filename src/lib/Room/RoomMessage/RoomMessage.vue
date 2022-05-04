@@ -24,7 +24,7 @@
 
 		<div
 			v-else
-			class="vac-message-box"
+			class="vac-message-box test"
 			:class="{ 'vac-offset-current': message.senderId === currentUserId }"
 			@click="selectMessage"
 		>
