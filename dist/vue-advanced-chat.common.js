@@ -39891,31 +39891,31 @@ function RoomMessagevue_type_template_id_67c583a2_render(_ctx, _cache, $props, $
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.reduce.js
 var es_array_reduce = __webpack_require__("13d5");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/components/FormatMessage/CardMessage.vue?vue&type=template&id=d153353a
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/components/FormatMessage/CardMessage.vue?vue&type=template&id=f7c467f2
 
-var CardMessagevue_type_template_id_d153353a_hoisted_1 = ["href"];
-var CardMessagevue_type_template_id_d153353a_hoisted_2 = ["src", "alt"];
-var CardMessagevue_type_template_id_d153353a_hoisted_3 = {
-  "class": "vac-link-card-desc"
+var CardMessagevue_type_template_id_f7c467f2_hoisted_1 = {
+  "class": "vac-link-card-wrapper"
 };
-function CardMessagevue_type_template_id_d153353a_render(_ctx, _cache, $props, $setup, $data, $options) {
+var CardMessagevue_type_template_id_f7c467f2_hoisted_2 = ["src", "alt"];
+var CardMessagevue_type_template_id_f7c467f2_hoisted_3 = ["href"];
+function CardMessagevue_type_template_id_f7c467f2_render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_svg_icon = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("svg-icon");
 
-  return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("a", {
-    href: $props.href,
-    "class": "vac-link-card-wrapper",
-    target: "_blank"
-  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("img", {
+  return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", CardMessagevue_type_template_id_f7c467f2_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("img", {
     src: $props.img,
     alt: "".concat($props.title, "\u306E\u753B\u50CF"),
     "class": "vac-link-ogpimg"
-  }, null, 8, CardMessagevue_type_template_id_d153353a_hoisted_2), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", CardMessagevue_type_template_id_d153353a_hoisted_3, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("h3", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.title), 1), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("p", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.href), 1)]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_svg_icon, {
+  }, null, 8, CardMessagevue_type_template_id_f7c467f2_hoisted_2), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("a", {
+    href: $props.href,
+    target: "_blank",
+    "class": "vac-link-card-desc"
+  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("h3", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.title), 1), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("p", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.href), 1)], 8, CardMessagevue_type_template_id_f7c467f2_hoisted_3), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_svg_icon, {
     name: "bookmark",
     "class": Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])("vac-link-card-bookmark ".concat($data.bookmarked ? 'isBookmarked' : '')),
     onClick: $options.toggleBookmark
-  }, null, 8, ["class", "onClick"])], 8, CardMessagevue_type_template_id_d153353a_hoisted_1);
+  }, null, 8, ["class", "onClick"])]);
 }
-// CONCATENATED MODULE: ./src/components/FormatMessage/CardMessage.vue?vue&type=template&id=d153353a
+// CONCATENATED MODULE: ./src/components/FormatMessage/CardMessage.vue?vue&type=template&id=f7c467f2
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/components/FormatMessage/CardMessage.vue?vue&type=script&lang=js
 
@@ -39973,7 +39973,7 @@ function CardMessagevue_type_template_id_d153353a_render(_ctx, _cache, $props, $
 
 
 
-const CardMessage_exports_ = /*#__PURE__*/exportHelper_default()(CardMessagevue_type_script_lang_js, [['render',CardMessagevue_type_template_id_d153353a_render]])
+const CardMessage_exports_ = /*#__PURE__*/exportHelper_default()(CardMessagevue_type_script_lang_js, [['render',CardMessagevue_type_template_id_f7c467f2_render]])
 
 /* harmony default export */ var CardMessage = (CardMessage_exports_);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/lib/Room/RoomMessage/MessageReply/MessageReply.vue?vue&type=template&id=d0ae9658

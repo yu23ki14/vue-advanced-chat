@@ -1,16 +1,16 @@
 <template>
-	<a :href="href" class="vac-link-card-wrapper" target="_blank">
+	<div class="vac-link-card-wrapper">
 		<img :src="img" :alt="`${title}の画像`" class="vac-link-ogpimg" />
-		<div class="vac-link-card-desc">
+		<a :href="href" target="_blank" class="vac-link-card-desc">
 			<h3>{{ title }}</h3>
 			<p>{{ href }}</p>
-		</div>
+		</a>
 		<svg-icon
 			name="bookmark"
 			:class="`vac-link-card-bookmark ${bookmarked ? 'isBookmarked' : ''}`"
 			@click="toggleBookmark"
 		/>
-	</a>
+	</div>
 </template>
 
 <script>
