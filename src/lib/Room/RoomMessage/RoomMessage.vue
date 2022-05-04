@@ -98,6 +98,14 @@
 							</template>
 						</format-message>
 
+						<link-card
+							v-else-if="isLink"
+							:title="message.link.title"
+							:href="message.link.href"
+							:img="message.link.img"
+						>
+						</link-card>
+
 						<message-files
 							v-else-if="!isAudio || message.files.length > 1"
 							:current-user-id="currentUserId"
@@ -191,9 +199,7 @@
 						}"
 						@click="$emit('open-failed-message', { message })"
 					>
-						<div class="vac-failure-text">
-!
-</div>
+						<div class="vac-failure-text">!</div>
 					</div>
 				</slot>
 				<div
@@ -308,6 +314,13 @@ export default {
 		},
 		isAudio() {
 			return this.message.files?.some(file => isAudioFile(file))
+		},
+		isLink() {
+			if (this.message.link) {
+				return true
+			} else {
+				return false
+			}
 		},
 		isCheckmarkVisible() {
 			return (

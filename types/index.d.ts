@@ -27,6 +27,12 @@ export interface MessageFile {
 	progress?: number
 }
 
+export interface MessageLink {
+	title: string
+	href: string
+	img?: string
+}
+
 export interface LastMessage {
 	content: string
 	senderId: StringNumber
@@ -76,6 +82,7 @@ export interface Message {
 	files?: MessageFile[]
 	reactions?: MessageReactions
 	replyMessage?: Message
+	link?: MessageLink
 }
 
 export type Messages = Message[]
