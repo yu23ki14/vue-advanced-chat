@@ -85,8 +85,15 @@
 							<span>{{ textMessages.MESSAGE_DELETED }}</span>
 						</div>
 
+						<link-card
+							v-else-if="isLink"
+							:title="message.link.title"
+							:href="message.link.href"
+							:img="message.link.img"
+						/>
+
 						<format-message
-							v-else-if="!message.files || !message.files.length || !isLink"
+							v-else-if="!message.files || !message.files.length"
 							:content="message.content"
 							:users="roomUsers"
 							:text-formatting="textFormatting"
@@ -97,13 +104,6 @@
 								<slot :name="name" v-bind="data" />
 							</template>
 						</format-message>
-
-						<link-card
-							v-else-if="isLink"
-							:title="message.link.title"
-							:href="message.link.href"
-							:img="message.link.img"
-						/>
 
 						<message-files
 							v-else-if="!isAudio || message.files.length > 1"
@@ -317,7 +317,7 @@ export default {
 			return this.message.files?.some(file => isAudioFile(file))
 		},
 		isLink() {
-			if (this.message.link) {
+			if (this.message.link?.href.length > 0) {
 				return true
 			} else {
 				return false
