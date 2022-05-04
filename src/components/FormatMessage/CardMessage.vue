@@ -5,13 +5,18 @@
 			<h3>{{ title }}</h3>
 			<p>{{ href }}</p>
 		</div>
-		<img src="../../assets/bookmark.svg" alt="ブックマーク" width="30px" />
+		<svg-icon name="bookmark" />
 	</a>
 </template>
 
 <script>
+import SvgIcon from '../SvgIcon/SvgIcon'
+
 export default {
 	name: 'CardMessage',
+	components: {
+		SvgIcon
+	},
 	props: {
 		title: { type: String, required: true },
 		href: { type: String, required: true },
