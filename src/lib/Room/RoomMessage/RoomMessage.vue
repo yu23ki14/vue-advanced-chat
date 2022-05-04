@@ -22,8 +22,12 @@
 			</format-message>
 		</div>
 
-		<div class="vac-cardmessage-box" v-else-if="isCard">
-			<card-message :content="message.content" />
+		<div class="vac-linkcard-box" v-else-if="isLinkCard">
+			<card-message
+				:title="message.link.title"
+				:href="message.link.href"
+				:img="message.link.img"
+			/>
 		</div>
 
 		<div
@@ -313,8 +317,12 @@ export default {
 		isAudio() {
 			return this.message.files?.some(file => isAudioFile(file))
 		},
-		isCard() {
-			return this.message.card
+		isLinkCard() {
+			if (this.message.link?.href.length > 0) {
+				return true
+			} else {
+				return false
+			}
 		},
 		isCheckmarkVisible() {
 			return (
