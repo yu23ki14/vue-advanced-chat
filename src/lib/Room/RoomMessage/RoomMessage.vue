@@ -8,7 +8,7 @@
 			{{ textMessages.NEW_MESSAGES }}
 		</div>
 
-		<div v-if="message.system" class="vac-card-info vac-card-system test">
+		<div v-if="message.system" class="vac-card-info vac-card-system">
 			<format-message
 				:content="message.content"
 				:users="roomUsers"
@@ -22,9 +22,17 @@
 			</format-message>
 		</div>
 
+		<div class="vac-linkcard-box" v-else-if="isLink">
+			<link-card
+				:title="message.link.title"
+				:href="message.link.href"
+				:img="message.link.img"
+			/>
+		</div>
+
 		<div
 			v-else
-			class="vac-message-box test"
+			class="vac-message-box"
 			:class="{ 'vac-offset-current': message.senderId === currentUserId }"
 			@click="selectMessage"
 		>
@@ -84,13 +92,6 @@
 							</slot>
 							<span>{{ textMessages.MESSAGE_DELETED }}</span>
 						</div>
-
-						<link-card
-							v-else-if="isLink"
-							:title="message.link.title"
-							:href="message.link.href"
-							:img="message.link.img"
-						/>
 
 						<format-message
 							v-else-if="!message.files || !message.files.length"
